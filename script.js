@@ -1,9 +1,11 @@
-/* =========================================
-   VIRTUAL KERALA V1
-   ========================================= */
+/* =====================================================
+   VIRTUAL KERALA V2
+   ===================================================== */
 
 
-/* DISTRICT DATA */
+/* =====================================================
+   DISTRICTS
+   ===================================================== */
 
 const districts = [
 
@@ -11,15 +13,14 @@ const districts = [
         name: "Thiruvananthapuram",
         icon: "🏛️",
         hq: "Thiruvananthapuram",
-        famous: "Capital city, beaches and temples",
-        description:
-            "The southernmost district of Kerala and home to the state's capital city.",
+        famous: "Capital city and beaches",
+        description: "The southernmost district of Kerala and home to the state's capital.",
         places: [
             "Kovalam",
-            "Padmanabhaswamy Temple",
             "Varkala",
+            "Poovar",
             "Neyyar Dam",
-            "Poovar"
+            "Padmanabhaswamy Temple"
         ]
     },
 
@@ -27,9 +28,8 @@ const districts = [
         name: "Kollam",
         icon: "🚤",
         hq: "Kollam",
-        famous: "Backwaters, beaches and cashew",
-        description:
-            "A coastal district known for its backwaters, beaches, historic sites and cashew industry.",
+        famous: "Backwaters and cashew",
+        description: "A coastal district known for backwaters, beaches and traditional industries.",
         places: [
             "Ashtamudi Lake",
             "Thenmala",
@@ -43,9 +43,8 @@ const districts = [
         name: "Pathanamthitta",
         icon: "⛩️",
         hq: "Pathanamthitta",
-        famous: "Sabarimala and pilgrimage",
-        description:
-            "A district known for forests, rivers and important pilgrimage destinations.",
+        famous: "Pilgrimage and forests",
+        description: "A district with forests, rivers and important pilgrimage destinations.",
         places: [
             "Sabarimala",
             "Gavi",
@@ -60,8 +59,7 @@ const districts = [
         icon: "🛶",
         hq: "Alappuzha",
         famous: "Backwaters and houseboats",
-        description:
-            "Often associated with Kerala's famous backwaters, canals and houseboat tourism.",
+        description: "Famous for its extensive backwaters, canals, beaches and houseboat tourism.",
         places: [
             "Alappuzha Backwaters",
             "Kuttanad",
@@ -75,15 +73,14 @@ const districts = [
         name: "Kottayam",
         icon: "🌴",
         hq: "Kottayam",
-        famous: "Rubber plantations and Kumarakom",
-        description:
-            "A green district surrounded by hills, plantations and waterways.",
+        famous: "Rubber and Kumarakom",
+        description: "A green district known for plantations, waterways and scenic highlands.",
         places: [
             "Kumarakom",
             "Vagamon",
             "Illikkal Kallu",
-            "Kottathavalam",
-            "Meenachil"
+            "Meenachil",
+            "Kottathavalam"
         ]
     },
 
@@ -91,9 +88,8 @@ const districts = [
         name: "Idukki",
         icon: "⛰️",
         hq: "Painavu",
-        famous: "Mountains, dams and wildlife",
-        description:
-            "A mountainous district famous for forests, wildlife, tea plantations and major dams.",
+        famous: "Mountains and wildlife",
+        description: "A mountainous district famous for forests, wildlife, plantations and dams.",
         places: [
             "Munnar",
             "Thekkady",
@@ -107,9 +103,8 @@ const districts = [
         name: "Ernakulam",
         icon: "🏙️",
         hq: "Kakkanad",
-        famous: "Kochi and urban culture",
-        description:
-            "A major commercial and urban district centered around Kochi.",
+        famous: "Kochi and commerce",
+        description: "A major urban and commercial district centered around Kochi.",
         places: [
             "Fort Kochi",
             "Mattancherry",
@@ -123,15 +118,14 @@ const districts = [
         name: "Thrissur",
         icon: "🐘",
         hq: "Thrissur",
-        famous: "Festivals and cultural heritage",
-        description:
-            "Known as an important cultural center of Kerala and home to major festivals.",
+        famous: "Culture and festivals",
+        description: "A major cultural center of Kerala with important temples and festivals.",
         places: [
             "Thrissur Pooram",
             "Athirappilly",
-            "Vadakkunnathan Temple",
             "Guruvayur",
-            "Vazhachal"
+            "Vazhachal",
+            "Vadakkunnathan Temple"
         ]
     },
 
@@ -139,9 +133,8 @@ const districts = [
         name: "Palakkad",
         icon: "🌾",
         hq: "Palakkad",
-        famous: "Palakkad Fort and Palakkad Gap",
-        description:
-            "A district of plains, mountains, forests and agricultural landscapes.",
+        famous: "Palakkad Gap and agriculture",
+        description: "A district of plains, mountains, forests and agricultural landscapes.",
         places: [
             "Palakkad Fort",
             "Silent Valley",
@@ -155,9 +148,8 @@ const districts = [
         name: "Malappuram",
         icon: "🌿",
         hq: "Malappuram",
-        famous: "Hills, rivers and cultural heritage",
-        description:
-            "A northern Kerala district with hills, rivers, historic places and cultural traditions.",
+        famous: "Hills and cultural heritage",
+        description: "A northern district known for hills, rivers, history and cultural traditions.",
         places: [
             "Kottakkunnu",
             "Nilambur",
@@ -171,9 +163,8 @@ const districts = [
         name: "Kozhikode",
         icon: "🌊",
         hq: "Kozhikode",
-        famous: "Historic port and food",
-        description:
-            "A historic coastal city associated with trade, culture and famous Malabar cuisine.",
+        famous: "Historic port and cuisine",
+        description: "A historic coastal district associated with trade, culture and Malabar cuisine.",
         places: [
             "Kozhikode Beach",
             "Kappad",
@@ -187,9 +178,8 @@ const districts = [
         name: "Wayanad",
         icon: "🐘",
         hq: "Kalpetta",
-        famous: "Forests, hills and wildlife",
-        description:
-            "A highland district famous for forests, wildlife, caves and scenic hills.",
+        famous: "Hills and wildlife",
+        description: "A highland district known for forests, wildlife, caves and scenic hills.",
         places: [
             "Edakkal Caves",
             "Soochipara Falls",
@@ -204,8 +194,7 @@ const districts = [
         icon: "🎭",
         hq: "Kannur",
         famous: "Theyyam and beaches",
-        description:
-            "A northern coastal district known for beaches, forts and traditional Theyyam performances.",
+        description: "A northern coastal district known for beaches, forts and Theyyam.",
         places: [
             "Muzhappilangad Beach",
             "St. Angelo Fort",
@@ -219,9 +208,8 @@ const districts = [
         name: "Kasaragod",
         icon: "🏰",
         hq: "Kasaragod",
-        famous: "Bekal Fort and beaches",
-        description:
-            "Kerala's northernmost district, known for forts, beaches and diverse cultural traditions.",
+        famous: "Bekal Fort",
+        description: "Kerala's northernmost district, known for forts, beaches and cultural diversity.",
         places: [
             "Bekal Fort",
             "Bekal Beach",
@@ -234,19 +222,229 @@ const districts = [
 ];
 
 
-/* CATEGORY DATA */
+/* =====================================================
+   DESTINATIONS
+   ===================================================== */
+
+const destinations = [
+
+    {
+        name: "Munnar",
+        lat: 10.0889,
+        lng: 77.0595,
+        icon: "⛰️",
+        category: "hill",
+        district: "Idukki",
+        description: "A famous highland destination known for tea plantations, mountains and cool climate."
+    },
+
+    {
+        name: "Wayanad",
+        lat: 11.6854,
+        lng: 76.1320,
+        icon: "🌿",
+        category: "wildlife",
+        district: "Wayanad",
+        description: "A scenic highland region with forests, wildlife, waterfalls and caves."
+    },
+
+    {
+        name: "Alappuzha Backwaters",
+        lat: 9.4981,
+        lng: 76.3388,
+        icon: "🛶",
+        category: "water",
+        district: "Alappuzha",
+        description: "A network of lakes, canals and waterways famous for houseboat tourism."
+    },
+
+    {
+        name: "Kovalam",
+        lat: 8.4004,
+        lng: 76.9787,
+        icon: "🏖️",
+        category: "beach",
+        district: "Thiruvananthapuram",
+        description: "A popular coastal destination known for its beaches and lighthouse."
+    },
+
+    {
+        name: "Varkala",
+        lat: 8.7379,
+        lng: 76.7163,
+        icon: "🏖️",
+        category: "beach",
+        district: "Thiruvananthapuram",
+        description: "A coastal destination famous for its dramatic cliff and beach."
+    },
+
+    {
+        name: "Fort Kochi",
+        lat: 9.9658,
+        lng: 76.2421,
+        icon: "🏛️",
+        category: "culture",
+        district: "Ernakulam",
+        description: "A historic area of Kochi known for heritage architecture and cultural landmarks."
+    },
+
+    {
+        name: "Athirappilly",
+        lat: 10.2850,
+        lng: 76.5690,
+        icon: "💧",
+        category: "nature",
+        district: "Thrissur",
+        description: "A famous waterfall and forest destination in Thrissur district."
+    },
+
+    {
+        name: "Thekkady",
+        lat: 9.6031,
+        lng: 77.1610,
+        icon: "🐘",
+        category: "wildlife",
+        district: "Idukki",
+        description: "A popular nature and wildlife destination near the Periyar region."
+    },
+
+    {
+        name: "Bekal Fort",
+        lat: 12.3916,
+        lng: 75.0312,
+        icon: "🏰",
+        category: "culture",
+        district: "Kasaragod",
+        description: "A major historic fort located on the northern Kerala coast."
+    },
+
+    {
+        name: "Kozhikode Beach",
+        lat: 11.2588,
+        lng: 75.7804,
+        icon: "🏖️",
+        category: "beach",
+        district: "Kozhikode",
+        description: "A popular beach destination in the historic Malabar city of Kozhikode."
+    },
+
+    {
+        name: "Vagamon",
+        lat: 9.6862,
+        lng: 76.9045,
+        icon: "⛰️",
+        category: "hill",
+        district: "Idukki",
+        description: "A scenic hill destination surrounded by green landscapes."
+    },
+
+    {
+        name: "Palakkad Fort",
+        lat: 10.7750,
+        lng: 76.6510,
+        icon: "🏰",
+        category: "culture",
+        district: "Palakkad",
+        description: "A historic fort located in the heart of Palakkad."
+    },
+
+    {
+        name: "Kumarakom",
+        lat: 9.6170,
+        lng: 76.4300,
+        icon: "🛶",
+        category: "water",
+        district: "Kottayam",
+        description: "A backwater destination on the shores of Vembanad Lake."
+    },
+
+    {
+        name: "Marari Beach",
+        lat: 9.6030,
+        lng: 76.2900,
+        icon: "🏖️",
+        category: "beach",
+        district: "Alappuzha",
+        description: "A peaceful coastal destination near Alappuzha."
+    },
+
+    {
+        name: "Silent Valley",
+        lat: 11.0660,
+        lng: 76.4280,
+        icon: "🌳",
+        category: "wildlife",
+        district: "Palakkad",
+        description: "A protected forest region in the Western Ghats."
+    },
+
+    {
+        name: "Guruvayur",
+        lat: 10.5940,
+        lng: 76.0410,
+        icon: "🛕",
+        category: "culture",
+        district: "Thrissur",
+        description: "A major pilgrimage destination in central Kerala."
+    },
+
+    {
+        name: "Poovar",
+        lat: 8.3175,
+        lng: 77.0680,
+        icon: "🛶",
+        category: "water",
+        district: "Thiruvananthapuram",
+        description: "A coastal destination known for its estuary and waterways."
+    },
+
+    {
+        name: "Thenmala",
+        lat: 8.9590,
+        lng: 77.0670,
+        icon: "🌿",
+        category: "nature",
+        district: "Kollam",
+        description: "A nature destination surrounded by forests and hills."
+    },
+
+    {
+        name: "Kappad",
+        lat: 11.4300,
+        lng: 75.6800,
+        icon: "🏖️",
+        category: "beach",
+        district: "Kozhikode",
+        description: "A historic coastal destination near Kozhikode."
+    },
+
+    {
+        name: "Nelliyampathy",
+        lat: 10.5300,
+        lng: 76.6900,
+        icon: "⛰️",
+        category: "hill",
+        district: "Palakkad",
+        description: "A scenic hill region with plantations, forests and viewpoints."
+    }
+
+];
+
+
+/* =====================================================
+   CATEGORIES
+   ===================================================== */
 
 const categories = {
 
     tourism: {
         icon: "🏞️",
         title: "Kerala Tourism",
-        description:
-            "Explore some of Kerala's famous destinations.",
+        description: "Discover Kerala's famous destinations.",
         items: [
             "Munnar",
-            "Alappuzha Backwaters",
             "Wayanad",
+            "Alappuzha",
             "Kovalam",
             "Varkala",
             "Thekkady",
@@ -260,13 +458,12 @@ const categories = {
     food: {
         icon: "🍛",
         title: "Kerala Food",
-        description:
-            "Kerala has a rich food culture with regional specialties.",
+        description: "Explore popular dishes associated with Kerala cuisine.",
         items: [
             "Sadya",
             "Puttu",
             "Appam",
-            "Kerala Parotta",
+            "Parotta",
             "Malabar Biryani",
             "Fish Curry",
             "Palada Payasam",
@@ -279,85 +476,250 @@ const categories = {
     culture: {
         icon: "🎭",
         title: "Kerala Culture",
-        description:
-            "Discover traditional art forms and cultural celebrations.",
+        description: "Discover Kerala's traditional arts and festivals.",
         items: [
             "Kathakali",
             "Mohiniyattam",
             "Theyyam",
             "Koodiyattam",
-            "Chakyar Koothu",
             "Thiruvathira",
             "Chenda Melam",
             "Onam",
             "Vishu",
-            "Thrissur Pooram"
+            "Thrissur Pooram",
+            "Boat Races"
         ]
     },
 
     history: {
         icon: "📚",
         title: "Kerala History",
-        description:
-            "Explore important parts of Kerala's historical story.",
+        description: "Explore important themes in Kerala's history.",
         items: [
             "Ancient trade",
             "Spice trade",
             "Muziris",
             "European arrival",
-            "Colonial period",
             "Travancore",
             "Cochin",
             "Malabar",
+            "Colonial period",
             "Formation of Kerala",
             "Modern Kerala"
-        ]
-    },
-
-    transport: {
-        icon: "🚆",
-        title: "Kerala Transport",
-        description:
-            "Kerala has road, rail, air and water transport networks.",
-        items: [
-            "Indian Railways",
-            "KSRTC",
-            "Kochi Metro",
-            "Kochi Water Metro",
-            "Cochin International Airport",
-            "Trivandrum International Airport",
-            "Calicut International Airport",
-            "Kannur International Airport"
         ]
     },
 
     nature: {
         icon: "🌿",
         title: "Kerala Nature",
-        description:
-            "Kerala has forests, mountains, rivers, wetlands and coastline.",
+        description: "Explore Kerala's diverse landscapes.",
         items: [
             "Western Ghats",
-            "Backwaters",
             "Rainforests",
-            "Tea plantations",
-            "Wildlife sanctuaries",
+            "Backwaters",
             "Waterfalls",
             "Beaches",
+            "Tea plantations",
+            "Wildlife",
             "Mangroves"
+        ]
+    },
+
+    transport: {
+        icon: "🚆",
+        title: "Kerala Transport",
+        description: "Explore major transportation systems.",
+        items: [
+            "Indian Railways",
+            "KSRTC",
+            "Kochi Metro",
+            "Kochi Water Metro",
+            "Trivandrum Airport",
+            "Cochin Airport",
+            "Calicut Airport",
+            "Kannur Airport"
         ]
     }
 
 };
 
 
-/* DISPLAY DISTRICTS */
+/* =====================================================
+   MAP
+   ===================================================== */
+
+let map;
+
+let markerLayer;
+
+let markerObjects = [];
+
+let selectedDestination = null;
+
+
+/* INITIALIZE MAP */
+
+function initializeMap() {
+
+    map = L.map("map").setView(
+        [10.45, 76.5],
+        7.5
+    );
+
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; OpenStreetMap contributors'
+        }
+    ).addTo(map);
+
+
+    markerLayer = L.layerGroup().addTo(map);
+
+
+    destinations.forEach(
+        destination => addDestinationMarker(destination)
+    );
+
+
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 300);
+
+}
+
+
+/* ADD MARKER */
+
+function addDestinationMarker(destination) {
+
+    const marker =
+        L.marker(
+            [
+                destination.lat,
+                destination.lng
+            ]
+        );
+
+
+    marker.bindPopup(`
+
+        <div class="map-popup">
+
+            <strong>
+                ${destination.icon}
+                ${destination.name}
+            </strong>
+
+            <br>
+
+            <small>
+                ${destination.district}
+            </small>
+
+            <br><br>
+
+            <button
+                onclick="openDestination('${destination.name}')"
+                style="
+                    border:none;
+                    padding:8px 12px;
+                    border-radius:15px;
+                    background:#087f45;
+                    color:white;
+                    cursor:pointer;
+                "
+            >
+                Explore
+            </button>
+
+        </div>
+
+    `);
+
+
+    markerObjects.push({
+        marker: marker,
+        destination: destination
+    });
+
+
+    marker.addTo(markerLayer);
+
+}
+
+
+/* FILTER MAP */
+
+function filterMap(category) {
+
+    markerObjects.forEach(object => {
+
+        const shouldShow =
+            category === "all" ||
+            object.destination.category === category;
+
+
+        if (shouldShow) {
+
+            if (!markerLayer.hasLayer(object.marker)) {
+                object.marker.addTo(markerLayer);
+            }
+
+        } else {
+
+            if (markerLayer.hasLayer(object.marker)) {
+                markerLayer.removeLayer(object.marker);
+            }
+
+        }
+
+    });
+
+}
+
+
+/* FILTER BUTTONS */
+
+document
+    .querySelectorAll(".filter-button")
+    .forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            document
+                .querySelectorAll(".filter-button")
+                .forEach(btn =>
+                    btn.classList.remove("active")
+                );
+
+
+            button.classList.add("active");
+
+
+            filterMap(
+                button.dataset.category
+            );
+
+        });
+
+    });
+
+
+/* =====================================================
+   DISTRICT DISPLAY
+   ===================================================== */
 
 function displayDistricts(list = districts) {
 
-    const grid = document.getElementById("districtGrid");
+    const grid =
+        document.getElementById("districtGrid");
 
     grid.innerHTML = "";
+
 
     if (list.length === 0) {
 
@@ -368,33 +730,45 @@ function displayDistricts(list = districts) {
                 padding:40px;
             ">
                 <h3>District not found 😕</h3>
-                <p>Try another district name.</p>
+                <p>Try another search.</p>
             </div>
         `;
 
         return;
+
     }
 
 
-    list.forEach((district, index) => {
+    list.forEach(district => {
 
-        const card = document.createElement("div");
+        const card =
+            document.createElement("article");
 
         card.className = "district-card";
 
+
         card.innerHTML = `
 
-            <div class="district-icon">
+            <div class="district-card-icon">
                 ${district.icon}
             </div>
 
-            <h3>${district.name}</h3>
+            <h3>
+                ${district.name}
+            </h3>
 
-            <p>${district.famous}</p>
+            <p>
+                ${district.famous}
+            </p>
 
         `;
 
-        card.onclick = () => openDistrict(index);
+
+        card.addEventListener(
+            "click",
+            () => openDistrict(district)
+        );
+
 
         grid.appendChild(card);
 
@@ -403,11 +777,11 @@ function displayDistricts(list = districts) {
 }
 
 
-/* SEARCH */
+/* SEARCH DISTRICTS */
 
 function searchDistricts() {
 
-    const search =
+    const value =
         document
             .getElementById("districtSearch")
             .value
@@ -415,9 +789,13 @@ function searchDistricts() {
             .trim();
 
 
-    const filtered = districts.filter(district =>
-        district.name.toLowerCase().includes(search)
-    );
+    const filtered =
+        districts.filter(
+            district =>
+                district.name
+                    .toLowerCase()
+                    .includes(value)
+        );
 
 
     displayDistricts(filtered);
@@ -425,231 +803,113 @@ function searchDistricts() {
 }
 
 
-/* OPEN DISTRICT */
+/* =====================================================
+   DISTRICT MODAL
+   ===================================================== */
 
-function openDistrict(index) {
+function openDistrict(district) {
 
-    const district = districts[index];
-
-    document.getElementById("modalIcon").textContent =
-        district.icon;
-
-    document.getElementById("modalTitle").textContent =
-        district.name;
-
-    document.getElementById("modalDescription").textContent =
-        district.description;
-
-    document.getElementById("modalHQ").textContent =
-        district.hq;
-
-    document.getElementById("modalFamous").textContent =
-        district.famous;
+    document.getElementById(
+        "districtModalIcon"
+    ).textContent = district.icon;
 
 
-    const places =
-        document.getElementById("modalPlaces");
-
-    places.innerHTML = "";
-
-
-    district.places.forEach(place => {
-
-        const element = document.createElement("span");
-
-        element.className = "place";
-
-        element.textContent = place;
-
-        places.appendChild(element);
-
-    });
+    document.getElementById(
+        "districtModalTitle"
+    ).textContent = district.name;
 
 
-    document
-        .getElementById("districtModal")
-        .classList.add("show");
-
-}
+    document.getElementById(
+        "districtModalDescription"
+    ).textContent = district.description;
 
 
-/* CLOSE DISTRICT MODAL */
-
-function closeModal() {
-
-    document
-        .getElementById("districtModal")
-        .classList.remove("show");
-
-}
+    document.getElementById(
+        "districtModalHQ"
+    ).textContent = district.hq;
 
 
-/* CATEGORY */
-
-function showCategory(categoryName) {
-
-    const category = categories[categoryName];
-
-    if (!category) return;
-
-
-    document.getElementById("categoryIcon").textContent =
-        category.icon;
-
-    document.getElementById("categoryTitle").textContent =
-        category.title;
-
-    document.getElementById("categoryDescription").textContent =
-        category.description;
+    document.getElementById(
+        "districtModalFamous"
+    ).textContent = district.famous;
 
 
     const container =
-        document.getElementById("categoryItems");
+        document.getElementById(
+            "districtModalPlaces"
+        );
+
 
     container.innerHTML = "";
 
 
-    category.items.forEach(item => {
+    district.places.forEach(place => {
 
-        const element = document.createElement("div");
+        const tag =
+            document.createElement("span");
 
-        element.className = "category-item";
+        tag.className = "place-tag";
 
-        element.textContent = item;
+        tag.textContent = place;
 
-        container.appendChild(element);
+        tag.onclick = () =>
+            openDestination(place);
+
+        tag.style.cursor = "pointer";
+
+        container.appendChild(tag);
 
     });
 
 
     document
-        .getElementById("categoryModal")
+        .getElementById("districtModal")
         .classList.add("show");
 
 }
 
 
-/* CLOSE CATEGORY */
-
-function closeCategoryModal() {
+function closeDistrictModal() {
 
     document
-        .getElementById("categoryModal")
+        .getElementById("districtModal")
         .classList.remove("show");
 
 }
 
 
-/* SCROLL FUNCTIONS */
+/* =====================================================
+   DESTINATION MODAL
+   ===================================================== */
 
-function scrollToDistricts() {
+function openDestination(name) {
 
-    document
-        .getElementById("districts")
-        .scrollIntoView({
-            behavior: "smooth"
-        });
-
-}
-
-
-function scrollToExplore() {
-
-    document
-        .getElementById("explore")
-        .scrollIntoView({
-            behavior: "smooth"
-        });
-
-}
-
-
-/* DARK MODE */
-
-const themeButton =
-    document.getElementById("themeButton");
-
-
-themeButton.addEventListener("click", () => {
-
-    document.body.classList.toggle("dark");
-
-
-    if (document.body.classList.contains("dark")) {
-
-        themeButton.textContent = "☀️";
-
-        localStorage.setItem(
-            "virtualKeralaTheme",
-            "dark"
+    const destination =
+        destinations.find(
+            item => item.name === name
         );
 
-    } else {
 
-        themeButton.textContent = "🌙";
+    if (!destination) {
 
-        localStorage.setItem(
-            "virtualKeralaTheme",
-            "light"
-        );
+        const fallback =
+            destinations.find(
+                item =>
+                    item.name
+                        .toLowerCase()
+                        .includes(
+                            name.toLowerCase()
+                        )
+            );
 
-    }
+        if (!fallback) return;
 
-});
-
-
-/* LOAD SAVED THEME */
-
-if (
-    localStorage.getItem("virtualKeralaTheme")
-    === "dark"
-) {
-
-    document.body.classList.add("dark");
-
-    themeButton.textContent = "☀️";
-
-}
-
-
-/* CLOSE MODALS WHEN CLICKING OUTSIDE */
-
-window.addEventListener("click", event => {
-
-    const districtModal =
-        document.getElementById("districtModal");
-
-    const categoryModal =
-        document.getElementById("categoryModal");
-
-
-    if (event.target === districtModal) {
-        closeModal();
-    }
-
-
-    if (event.target === categoryModal) {
-        closeCategoryModal();
-    }
-
-});
-
-
-/* ESC KEY */
-
-document.addEventListener("keydown", event => {
-
-    if (event.key === "Escape") {
-
-        closeModal();
-
-        closeCategoryModal();
+        destination = fallback;
 
     }
 
-});
+
+    selectedDestination = destination;
 
 
-/* START WEBSITE */
-
-displayDistricts();
+    docu
